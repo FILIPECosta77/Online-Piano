@@ -82,7 +82,7 @@ header .column span {
 
   border-radius: inherit;
 
-  background-color: #c6c0b9;
+  background-color: #0f0f0f;
 
   transition: 0.5s;
   transform: translateY(-50%);
@@ -95,7 +95,7 @@ header .column span {
 .keys-check input:checked::before {
   left: 2.5rem;
 
-  background-color: #0f0f0f;
+  background-color: #c6c0b9;
   opacity: 1;
 }
 
@@ -132,7 +132,7 @@ header .column span {
   color: #0f0f0f;
 }
 
-.piano-keys .white:active {
+.piano-keys .white.active {
   box-shadow: inset -5px -5px 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -149,7 +149,7 @@ header .column span {
   margin: 0px -22px 0px -22px;
 }
 
-.piano-keys .black:active {
+.piano-keys .black.active {
   box-shadow: inset -5px -5px 10px rgba(255, 255, 255, 0.1);
 }
 
@@ -164,4 +164,8 @@ header .column span {
   justify-content: center;
 
   position: absolute;
+}
+
+.piano-keys .key.hide span {
+  display: none;
 }
